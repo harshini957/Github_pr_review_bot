@@ -21,7 +21,7 @@ def get_review_chain():
     llm = ChatGroq(
         model="llama-3.3-70b-versatile",
         temperature=0,
-        api_key=os.getenv("GROK_API_KEY")
+        api_key=os.getenv("GROQ_API_KEY")
     )
     parser = PydanticOutputParser(pydantic_object=ReviewOutput)
 
